@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>DeCoded</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                background-image: url('img/matrix.gif');
+            }
+            header {
+                height: auto; /* Убираем фиксированную высоту */
+                width: 100%;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                margin-right: 30px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .fixed-container {
+                height: 100%;
+                max-width: 1200px;
+                margin: 0 auto; /* Убираем правый и левый отступ */
+                padding: 0 20px;
+            }
+            header > div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end; /* Изменяем выравнивание вправо */
+            }
+            button {
+                border-radius: 10px;
+                padding: 15px 40px;
+                display: block;
+            }
+            .btn-light {
+                background-color: transparent;
+                border: 3px solid #fbcd79;
+                color: white;
+            }
+            .btn-dark {
+                background-color: #fbcd79;
+                border: 1px solid #fbcd79;
+                color: #262726;
+            }
+            section > div {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                background-image: url('img/dedsec.gif');
+                background-size: 500px;
+                background-position: center right;
+                background-repeat: no-repeat;
+            }
+            section {
+                height: 600px;
+                width: 100%;
+            }
+            h1 {
+                font-size: 50px;
+                margin: 0;
+            }
+
+            /* Адаптивные изменения */
+            @media screen and (max-width: 768px) {
+                .fixed-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                header > div {
+                    flex-direction: column; /* Отображаем элементы вертикально */
+                }
+                button {
+                    margin-bottom: 10px; /* Добавляем небольшой отступ между кнопками на маленьких экранах */
+                }
+                section > div {
+                    background-size: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="fixed-container">
+                <div>
+                    <form id="Telegram" action="https://Undet3cted.t.me" target="_blank"></form>
+                    <button class="btn-light" type="submit" form="Telegram">Telegram</button>
+                </div>
+            </div>
+        </header>
+        <section class="main-block">
+            <div class="fixed-container">
+                <h1>DeCoded</h1>
+                <p class="citation">В сети ты никогда не в безопасности</p>
+                <form id="endway" action="https://endway.su/decoded/" target="_blank"></form>
+                <button class="btn-dark" type="submit" form="endway">Профиль на форуме</button>
+            </div>
+        </section>
+    </body>
+</html>
